@@ -10,6 +10,21 @@
 }
 
 .headerBlack {
-  height: 5vh;
+  height: 40px;
   background-color: black;
+}
+
+.headerChoice {
+  height: 30px;
+  background-color: darkgrey;
+}
+
+.roundCircle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: darkgrey;
+  display: inline-block;
+  position: relative;
+  
 }

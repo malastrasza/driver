@@ -5,8 +5,12 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <div className="headerBlack"></div>
-                <div className="headerChoice"></div>
+                <div className="headerBlack">
+                    <span className="roundCircle"></span>
+                </div>
+                <div className="headerChoice">
+
+                </div>
             </div>
         );
     }
@@ -15,7 +19,7 @@ class Header extends Component {
 class Main extends Component {
     render() {
         return (<div className="mainComponent">
-            <Header/>
+                <Header/>
             </div>
         );
     }
