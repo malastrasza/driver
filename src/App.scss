@@ -4,6 +4,12 @@
   margin: 0;
 }
 
-div {
-  color: indianred;
+.mainComponent {
+  max-width: 480px;
+  min-width: 320px;
+}
+
+.headerBlack {
+  height: 5vh;
+  background-color: black;
 }
