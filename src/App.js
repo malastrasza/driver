@@ -9,7 +9,9 @@ class Header extends Component {
                     <span className="roundCircle"></span>
                 </div>
                 <div className="headerChoice">
-
+                    <button className="tab">PORADY</button>
+                    <button className="tab">FORUM</button>
+                    <button className="tab">QUIZ</button>
                 </div>
             </div>
         );
