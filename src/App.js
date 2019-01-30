@@ -3,7 +3,7 @@ import './App.scss';
 import {Player} from 'video-react';
 import "../node_modules/video-react/dist/video-react.css";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Link
 } from 'react-router-dom';
