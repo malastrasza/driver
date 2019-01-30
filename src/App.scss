@@ -12,6 +12,8 @@
 .headerBlack {
   height: 40px;
   background-color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .headerChoice {
@@ -20,13 +22,31 @@
 }
 
 .roundCircle {
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   background-color: darkgrey;
-  display: inline-block;
   position: relative;
-  
+  left: 2vw;
+  top: 0.75vh;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.patron {
+  height: 60%;
+  width: 30%;
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.6rem;
+}
+
+.userHeader {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .tab {
@@ -37,4 +57,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.weekly {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+}
+
+.weekly span:first-child {
+  position: relative;
+  left: 37%;
+}
+
+.weekly span:last-child {
+  position: relative;
+  left: 60%;
+ }
+
+.weeklyBody {
+  background-color: darkgrey;
+}
+
+.weeklyTags {
+  background-color: black;
+  color: white;
+  height: 20px;
+  width: 100%;
 }
