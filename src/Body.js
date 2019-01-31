@@ -4,6 +4,8 @@ import {Player} from "video-react";
 import movie from "./img/crash.mp4";
 import moviePoster from "./img/carcrash.jpeg";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 class Body extends Component {
     render() {
         return (
@@ -27,7 +29,10 @@ class Body extends Component {
                     </div>
                     <button>Trening</button>
                     <div className="weeklyTags">bezpieczeństwo | hamowanie | technika</div>
-                    <div className="weeklyShare"></div>
+                    <div className="weeklyShare">
+                        <FontAwesomeIcon icon="share-alt" />
+                        <FontAwesomeIcon icon="thumbs-up"/>
+                    </div>
                 </div>
             </div>
         )

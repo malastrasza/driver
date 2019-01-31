@@ -10,7 +10,7 @@
 }
 
 .headerBlack {
-  height: 40px;
+  height: 55px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -41,6 +41,11 @@
   align-self: center;
   justify-self: center;
   font-size: 0.6rem;
+}
+
+.patronate {
+  width: 60%;
+  height: 95%;
 }
 
 .userHeader {
@@ -85,3 +90,9 @@
   height: 20px;
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

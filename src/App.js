@@ -10,18 +10,27 @@ import {
 import Forum from "./Forum";
 import Body from "./Body";
 import Quiz from "./Quiz";
+import patronate from "./img/drivingexperience.jpg";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faIgloo, faThumbsUp, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faIgloo, faThumbsUp, faShareAlt);
 
 class Header extends Component {
+
+
+
     render() {
         return (
             <Router>
                 <div>
                     <div className="headerBlack">
                         <span className="roundCircle">DRV</span>
-                        <div className="patron">Patronat: Driving Experience</div>
+                        <div className="patron">Patronat: <img className="patronate" src={patronate}/></div>
                         <div className="userHeader">
                             <span>user</span>
-                            <span>points | wyloguj</span>
+                            <div><span>points</span> | <a href="#">wyloguj</a></div>
                         </div>
                     </div>
                     <div className="headerChoice">
