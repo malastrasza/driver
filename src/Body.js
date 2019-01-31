@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.scss';
 import {Player} from "video-react";
+import movie from "./img/crash.mp4";
+import moviePoster from "./img/carcrash.jpeg";
 
 class Body extends Component {
     render() {
@@ -14,8 +16,8 @@ class Body extends Component {
                     <span>Bezpieczne hamowanie silnikiem</span>
                     <Player
                         autoplay
-                        poster="./img/carcrash.jpg"
-                        src="./img/crash.mp4"
+                        poster={moviePoster}
+                        src={movie}
                     />
                     <div className="weeklyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in magna ut
                         diam facilisis suscipit at ac lectus. Praesent malesuada justo sapien, a commodo ex elementum

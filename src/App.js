@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import Forum from "./Forum";
 import Body from "./Body";
-
+import Quiz from "./Quiz";
 
 class Header extends Component {
     render() {
@@ -31,7 +31,9 @@ class Header extends Component {
                         <Link to="/forum">
                             <button className="tab">FORUM</button>
                         </Link>
+                        <Link to="/quiz">
                         <button className="tab">QUIZ</button>
+                        </Link>
                     </div>
                 </div>
             </Router>
@@ -60,6 +62,7 @@ class Main extends Component {
                     <Header/>
                     <Route exact path="/" component={Body}/>
                     <Route path="/forum" component={Forum}/>
+                    <Route path="/quiz" component={Quiz}/>
                     <Footer/>
                 </div>
             </Router>
