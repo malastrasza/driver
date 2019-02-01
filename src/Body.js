@@ -28,7 +28,7 @@ class Body extends Component {
                         velit congue, rhoncus dui non, tempor purus.
                     </div>
                     <button>Trening</button>
-                    <div className="weeklyTags">bezpieczeństwo | hamowanie | technika</div>
+                    <div className="weeklyTags"><a href="#">bezpieczeństwo</a> | hamowanie | technika</div>
                     <div className="weeklyShare">
                         <FontAwesomeIcon icon="share-alt" />
                         <FontAwesomeIcon icon="thumbs-up"/>
