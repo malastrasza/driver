@@ -30,8 +30,8 @@ class Body extends Component {
                     <button>Trening</button>
                     <div className="weeklyTags"><a href="#">bezpieczeństwo</a> | hamowanie | technika</div>
                     <div className="weeklyShare">
-                        <FontAwesomeIcon icon="share-alt" />
-                        <FontAwesomeIcon icon="thumbs-up"/>
+                        <a href="#"><FontAwesomeIcon icon="share-alt" /></a>
+                        <a href="#"><FontAwesomeIcon icon="thumbs-up"/></a>
                     </div>
                 </div>
             </div>
