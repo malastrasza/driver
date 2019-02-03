@@ -11,14 +11,13 @@ import Forum from "./Forum";
 import Body from "./Body";
 import Quiz from "./Quiz";
 import patronate from "./img/drivingexperience.jpg";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIgloo, faThumbsUp, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faThumbsUp, faShareAlt} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faIgloo, faThumbsUp, faShareAlt);
+library.add(faThumbsUp, faShareAlt);
 
 class Header extends Component {
-
 
 
     render() {
@@ -26,8 +25,8 @@ class Header extends Component {
             <Router>
                 <div>
                     <div className="headerBlack">
-                        <span className="roundCircle">DRV</span>
-                        <div className="patron">Patronat: <img className="patronate" src={patronate}/></div>
+                        <span className="logo">DRV</span>
+                        <img className="patronate" src={patronate} alt="patronate"/>
                         <div className="userHeader">
                             <span>user</span>
                             <div><span>points</span> | <a href="#">wyloguj</a></div>
@@ -35,13 +34,13 @@ class Header extends Component {
                     </div>
                     <div className="headerChoice">
                         <Link to="/">
-                            <button className="tab">PORADY</button>
+                            <button className="tab"><span className="tabText">PORADY</span></button>
                         </Link>
                         <Link to="/forum">
                             <button className="tab">FORUM</button>
                         </Link>
                         <Link to="/quiz">
-                        <button className="tab">QUIZ</button>
+                            <button className="tab">QUIZ</button>
                         </Link>
                     </div>
                 </div>

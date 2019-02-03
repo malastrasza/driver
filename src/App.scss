@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .mainComponent {
@@ -11,74 +12,89 @@
 
 .headerBlack {
   height: 55px;
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
 
 .headerChoice {
   height: 30px;
-  background-color: darkgrey;
-}
-
-.roundCircle {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: darkgrey;
-  position: relative;
-  left: 2vw;
-  top: 0.75vh;
-  font-size: 0.7rem;
-  display: flex;
-  align-items: center;
-}
-
-.patron {
-  height: 60%;
-  width: 30%;
   background-color: white;
-  align-self: center;
-  justify-self: center;
-  font-size: 0.6rem;
 }
 
 .patronate {
-  width: 60%;
-  height: 95%;
+  width: 20%;
+  height: 65%;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  left: 6%;
 }
 
 .userHeader {
   display: flex;
   flex-direction: column;
-  color: white;
+  justify-content: center;
+  color: black;
+  position: relative;
+  right: 2.5%;
+  font-size: 0.95rem;
+}
+
+.userHeader span:first-child {
+  align-self: center;
+}
+
+.userHeader a {
+  color: black;
+}
+
+.logo {
+  font-family: 'Righteous', cursive;
+  font-size: 1.8rem;
+  position: relative;
+  left: 4%;
+  align-self: center;
 }
 
 .tab {
   float: left;
   width: 33.3%;
-  border: 1px solid black;
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  border-left: none;
+  border-right: none;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  background-color: white;
 }
+
+
 
 .weekly {
   width: 100%;
+  height: 30px;
   display: flex;
   padding-top: 10px;
+  justify-content: space-around;
 }
 
 .weekly span:first-child {
   position: relative;
-  left: 37%;
+  font-weight: 600;
+  left: 20%;
+  bottom: 35%;
+  font-size: 1.3rem;
 }
 
 .weekly span:last-child {
   position: relative;
-  left: 60%;
- }
+  right: -9%;
+  bottom: 15%;
+}
 
 .weeklyBody {
   background-color: darkgrey;

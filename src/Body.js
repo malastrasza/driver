@@ -7,12 +7,17 @@ import moviePoster from "./img/carcrash.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Body extends Component {
+
     render() {
+
+        const actualDate = new Date();
+
         return (
             <div>
                 <div className="weekly">
                     <span>Porada tygodnia</span>
-                    <span>date</span>
+                    <span>{actualDate.toLocaleDateString()}</span>
+
                 </div>
                 <div className="weeklyBody">
                     <span>Bezpieczne hamowanie silnikiem</span>
