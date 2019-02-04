@@ -20,7 +20,7 @@ class Body extends Component {
 
                 </div>
                 <div className="weeklyBody">
-                    <span>Bezpieczne hamowanie silnikiem</span>
+                    <span className="titleBody">Bezpieczne hamowanie silnikiem</span>
                     <Player
                         autoplay
                         poster={moviePoster}
@@ -29,11 +29,12 @@ class Body extends Component {
                     <div className="weeklyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in magna ut
                         diam facilisis suscipit at ac lectus. Praesent malesuada justo sapien, a commodo ex elementum
                         eu. Donec ut aliquet arcu. Duis fringilla justo at lacus tempus porttitor. Quisque semper sem eu
-                        consequat tincidunt. Sed rutrum interdum massa, non fringilla urna fermentum in. Pellentesque ut
-                        velit congue, rhoncus dui non, tempor purus.
+                        conseq.
                     </div>
-                    <button>Trening</button>
-                    <div className="weeklyTags"><a href="#">bezpieczeństwo</a> | hamowanie | technika</div>
+                    <div className="buttonCenter">
+                    <button className="training">Trening</button>
+                    </div>
+                        <div className="weeklyTags"># <a href="#">bezpieczeństwo</a> | <a href="#">hamowanie</a> | <a href="#">technika</a></div>
                     <div className="weeklyShare">
                         <a href="#"><FontAwesomeIcon icon="share-alt" /></a>
                         <a href="#"><FontAwesomeIcon icon="thumbs-up"/></a>

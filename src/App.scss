@@ -15,6 +15,7 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .headerChoice {
@@ -24,11 +25,12 @@
 
 .patronate {
   width: 20%;
-  height: 65%;
+  height: 40px;
   align-self: center;
   justify-self: center;
   position: relative;
   left: 6%;
+
 }
 
 .userHeader {
@@ -39,6 +41,7 @@
   position: relative;
   right: 2.5%;
   font-size: 0.95rem;
+
 }
 
 .userHeader span:first-child {
@@ -70,8 +73,8 @@
   justify-content: center;
   font-weight: 600;
   background-color: white;
+  margin: 15px 0;
 }
-
 
 
 .weekly {
@@ -80,11 +83,12 @@
   display: flex;
   padding-top: 10px;
   justify-content: space-around;
+  margin-bottom: 15px;
 }
 
 .weekly span:first-child {
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
   left: 20%;
   bottom: 35%;
   font-size: 1.3rem;
@@ -97,14 +101,34 @@
 }
 
 .weeklyBody {
-  background-color: darkgrey;
+  background-color: #EFEFEF;
+  border: 0.5px solid black;
+  border-bottom-color: white;
+}
+
+.weeklyBody span:first-child {
+  font-weight: 600;
+  padding: 7px 15px;
+  display: inline-block;
+  font-size: 1.2rem;
 }
 
 .weeklyTags {
-  background-color: black;
-  color: white;
-  height: 20px;
+  background-color: white;
+  height: 25px;
   width: 100%;
+  border: 0.5px solid black;
+  //border-bottom-color: white;
+  color: black;
+  padding: 3.5px 15px;
+  font-size: 0.9rem;
+}
+
+
+.weeklyText {
+  padding: 20px 15px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 a {
@@ -112,3 +136,37 @@ a {
   color: white;
 }
 
+.weeklyTags a {
+  color: black;
+}
+
+.training {
+  margin-bottom: 18px;
+  margin-top: -5px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  padding: 1px 20px;
+  border: 0.75px solid black;
+  border-radius: 5%;
+  background-color: #EFEFEF;
+  font-size: 1rem;
+}
+
+.buttonCenter {
+  text-align: center;
+}
+
+.weeklyShare {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weeklyShare a {
+  color: #EBEBEB;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  //padding-left: 25px;
+  font-size: 1.6rem;
+}
