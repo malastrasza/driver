@@ -54,10 +54,15 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <div>Zadaj pytanie:
-                    <textarea></textarea></div>
-                <button>Wyślij</button>
-            </div>
+                <div className="buttonCenter">
+                    <textarea placeholder="Ask a question..." rows="20" cols="40"></textarea>
+                </div>
+                <div className="buttonCenter"><button className="training">Send</button>
+                </div>
+                <div className="signature">
+                    by malastrasza
+                </div>
+                </div>
         )
     }
 }
