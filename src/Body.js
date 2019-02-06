@@ -20,11 +20,12 @@ class Body extends Component {
 
                 </div>
                 <div className="weeklyBody">
-                    <span className="titleBody">Bezpieczne hamowanie silnikiem</span>
+                    <span className="titleBody">Safe engine brake</span>
                     <Player
                         autoplay
                         poster={moviePoster}
                         src={movie}
+                        light
                     />
                     <div className="weeklyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in magna ut
                         diam facilisis suscipit at ac lectus. Praesent malesuada justo sapien, a commodo ex elementum
