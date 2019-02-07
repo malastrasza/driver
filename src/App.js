@@ -51,13 +51,21 @@ class Header extends Component {
 
 
 class Footer extends Component {
+    constructor(props){
+        super(props);
+    }
+
+    handleSubmit() { alert('Your message has been send!')}
+
+
+
     render() {
         return (
             <div>
                 <div className="buttonCenter">
-                    <textarea placeholder="Ask a question..." rows="20" cols="40"></textarea>
+                    <textarea value="Ask a question..." rows="20" cols="40"></textarea>
                 </div>
-                <div className="buttonCenter"><button type="submit" className="training">Send</button>
+                <div className="buttonCenter"><button onClick={this.handleSubmit} type="submit" className="training">Send</button>
                 </div>
                 <div className="signature">
                     by malastrasza
