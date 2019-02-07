@@ -15,7 +15,7 @@ class Body extends Component {
         return (
             <div>
                 <div className="weekly">
-                    <span>Porada tygodnia</span>
+                    <span>Weekly tip</span>
                     <span>{actualDate.toLocaleDateString()}</span>
 
                 </div>
@@ -33,9 +33,9 @@ class Body extends Component {
                         conseq.
                     </div>
                     <div className="buttonCenter">
-                    <button className="training">Trening</button>
+                    <button className="training">Training</button>
                     </div>
-                        <div className="weeklyTags"># <a href="#">bezpieczeństwo</a> | <a href="#">hamowanie</a> | <a href="#">technika</a></div>
+                        <div className="weeklyTags"># <a href="#">safety</a> | <a href="#">brakes</a> | <a href="#">technique</a></div>
                     <div className="weeklyShare">
                         <a href="#"><FontAwesomeIcon icon="share-alt" /></a>
                         <a href="#"><FontAwesomeIcon icon="thumbs-up"/></a>

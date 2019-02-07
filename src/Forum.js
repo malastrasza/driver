@@ -4,7 +4,7 @@ import './App.scss';
 class Forum extends Component {
     render() {
         return (
-            <div>
+            <div className="quiz">
                 <span>FORUM</span>
             </div>
         )

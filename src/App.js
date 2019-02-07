@@ -29,12 +29,12 @@ class Header extends Component {
                         <img className="patronate" src={patronate} alt="patronate"/>
                         <div className="userHeader">
                             <span>user</span>
-                            <div><span>points</span> | <a href="#">wyloguj</a></div>
+                            <div><span>points</span> | <a href="#">logout</a></div>
                         </div>
                     </div>
                     <div className="headerChoice">
                         <Link to="/">
-                            <button className="tab"><span className="tabText">PORADY</span></button>
+                            <button className="tab"><span className="tabText">TIPS</span></button>
                         </Link>
                         <Link to="/forum">
                             <button className="tab">FORUM</button>
@@ -57,7 +57,7 @@ class Footer extends Component {
                 <div className="buttonCenter">
                     <textarea placeholder="Ask a question..." rows="20" cols="40"></textarea>
                 </div>
-                <div className="buttonCenter"><button className="training">Send</button>
+                <div className="buttonCenter"><button type="submit" className="training">Send</button>
                 </div>
                 <div className="signature">
                     by malastrasza
