@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Forum from "./Forum";
 import Body from "./Body";
+import {Popup} from "./Body";
 import Quiz from "./Quiz";
 import patronate from "./img/drivingexperience.jpg";
 import {library} from '@fortawesome/fontawesome-svg-core';
@@ -57,13 +58,11 @@ class Footer extends Component {
 
     handleSubmit() { alert('Your message has been send!')}
 
-
-
     render() {
         return (
             <div>
                 <div className="buttonCenter">
-                    <textarea value="Ask a question..." rows="20" cols="40"></textarea>
+                    <textarea placeholder="Ask a question..."></textarea>
                 </div>
                 <div className="buttonCenter"><button onClick={this.handleSubmit} type="submit" className="training">Send</button>
                 </div>
@@ -74,6 +73,8 @@ class Footer extends Component {
         )
     }
 }
+
+
 
 class Main extends Component {
     render() {

@@ -6,8 +6,30 @@ import moviePoster from "./img/carcrash.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class Body extends Component {
+class Popup extends Component {
+    render() {
+        return (
+            <div className="outerPop" onClick={this.props.closePopup}>
+                <div className="innerPop">
+                    <span>{this.props.text}</span>
+                </div>
+            </div>
+        )
+    }
+}
 
+class Body extends Component {
+constructor(props){
+    super(props);
+    this.state = {
+        showPopup: false
+    }
+}
+togglePopup() {
+    this.setState({
+        showPopup: !this.state.showPopup
+    })
+}
     render() {
 
         const actualDate = new Date();
@@ -33,7 +55,7 @@ class Body extends Component {
                         conseq.
                     </div>
                     <div className="buttonCenter">
-                    <button className="training">Training</button>
+                    <button className="training" onClick={this.togglePopup.bind(this)}>Training</button>
                     </div>
                         <div className="weeklyTags"># <a href="#">safety</a> | <a href="#">brakes</a> | <a href="#">technique</a></div>
                     <div className="weeklyShare">
@@ -41,9 +63,15 @@ class Body extends Component {
                         <a href="#"><FontAwesomeIcon icon="thumbs-up"/></a>
                     </div>
                 </div>
+                {this.state.showPopup ? <Popup
+                    text="Feature not available yet"
+                closePopup={this.togglePopup.bind(this)}/> : null}
             </div>
         )
     }
 }
 
+
+
 export default Body;
+export {Popup};

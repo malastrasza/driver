@@ -202,3 +202,36 @@ textarea:focus {
   text-align: center;
   margin-bottom: 15px;
 }
+
+.outerPop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.innerPop {
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  left: 25%;
+  right: 25%;
+  margin: auto;
+  background: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerPop span {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 5px;
+}
