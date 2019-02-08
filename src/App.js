@@ -15,6 +15,7 @@ import patronate from "./img/drivingexperience.jpg";
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faThumbsUp, faShareAlt} from '@fortawesome/free-solid-svg-icons';
+import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 library.add(faThumbsUp, faShareAlt);
 
@@ -35,7 +36,7 @@ class Header extends Component {
                     </div>
                     <div className="headerChoice">
                         <Link to="/">
-                            <button className="tab"><span className="tabText">TIPS</span></button>
+                            <button className="tab">TIPS</button>
                         </Link>
                         <Link to="/forum">
                             <button className="tab">FORUM</button>
