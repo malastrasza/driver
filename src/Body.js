@@ -4,51 +4,8 @@ import {Player, BigPlayButton} from "video-react";
 import movie from "./img/crash.mp4";
 import moviePoster from "./img/carcrash.jpeg";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 
-const list = [
-    {name: 'item1', description: 'Lorem'},
-    {name: 'item2', description: 'ipsum'},
-    {name: 'item3', description: 'sripsum'},
-    {name: 'item4', description: 'dipsum'},
-    {name: 'item5', description: 'Lorum'},
-    {name: 'item6', description: 'Loremus'},
-    {name: 'item7', description: 'Loremal'},
-    {name: 'item8', description: 'Loremiko'},
-];
-
-const MenuItem = ({text, description, selected}) => {
-    return (
-        <div className="menu-item">
-            <div className="upperChoice">{text}</div>
-            <div className="lowerChoice">{description}</div>
-        </div>
-    );
-};
-
-const Menu = (list) => list.map((named, description) => {
-    const {name} = named;
-    const {dsc} = description;
-
-    return (
-        <MenuItem
-            text={name}
-            description={dsc}
-            key={name}
-        />
-    );
-});
-
-const Arrow = ({text, className}) => {
-    return (
-        <div
-            className={className}
-        >{text}</div>
-    )
-};
-
-const ArrowLeft = Arrow({text: '<', className: 'arrow-prev'});
-const ArrowRight = Arrow({text: '>', className: 'arrow-next'});
+// import ComponentSlider from "@kapost/react-component-slider";
 
 
 class Popup extends Component {
@@ -68,13 +25,10 @@ class Body extends Component {
         super(props);
         this.state = {
             showPopup: false,
-            selected: 'item1'
+
         }
     }
 
-    onSelect = key => {
-        this.setState({selected: key});
-    };
 
     togglePopup() {
         this.setState({
@@ -83,9 +37,8 @@ class Body extends Component {
     }
 
     render() {
-
-        const {selected} = this.state;
-        const menu = Menu(list, selected);
+        // const renderLeftArrow = () => <i className="fa fa-caret-left"/>;
+        // const renderRightArrow = () => <i className="fa fa-caret-right"/>;
 
         const actualDate = new Date();
 
@@ -128,16 +81,104 @@ class Body extends Component {
                     closePopup={this.togglePopup.bind(this)}/> : null}
 
                 <div className="moreTips">
-                    <ScrollMenu
-                        data={menu}
-                        arrowLeft={ArrowLeft}
-                        arrowRight={ArrowRight}
-                        selected={selected}
-                        onSelect={this.onSelect}
-                        scrollToSelected={true}
-                        transition={1}
-                        hideSingleArrow={true}
-                    />
+                    <div className="scrolling-wrapper">
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Hill starting</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=1"/></a>
+                                    <div className="descriptionMenu">Ut accumsan erat ac nunc blandit, at malesuada ex
+                                        laoreet. Sed pretium maximus egestas. Nulla porta erat ut volutpat pulvinar.
+                                        Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Clutch control</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=2"/></a>
+                                    <div className="descriptionMenu">Curabitur et bibendum risus. Pellentesque sit amet
+                                        risus quis
+                                        lectus semper interdum nec in massa. Nulla porta erat ut volutpat pulvinar.
+                                        Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Rain drive</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=3"/></a>
+                                    <div className="descriptionMenu">Nulla porta erat ut volutpat pulvinar. Nulla
+                                        tincidunt erat augue. Nulla porta erat ut volutpat pulvinar. Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Parking</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=4"/></a>
+                                    <div className="descriptionMenu">Pellentesque sit amet risus quis
+                                        lectus semper interdum nec in massa.. Nulla porta erat ut volutpat pulvinar.
+                                        Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Hazard perception</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=5"/></a>
+                                    <div className="descriptionMenu">Sed pretium maximus egestas, at malesuada ex
+                                        laoreet. Sed pretium maximus egestas. Nulla porta erat ut volutpat pulvinar.
+                                        Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="menu-item">
+                                <div className="menuColumn">
+                                    <span className="titleMenu">Roundabouts</span>
+                                    <a href="https://placeholder.com"><img
+                                        src="https://via.placeholder.com/140x150.png?text=6"/></a>
+                                    <div className="descriptionMenu">Semper interdum nec in massa., at malesuada ex
+                                        laoreet. Sed pretium maximus egestas. Nulla porta erat ut volutpat pulvinar.
+                                        Nulla
+                                        tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
+                                        quis
+                                        lectus semper interdum nec in massa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

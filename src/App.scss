@@ -215,7 +215,7 @@ textarea:focus {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .innerPop {
@@ -245,21 +245,105 @@ textarea:focus {
   background-color: black;
 }
 
+//.component-slider {
+//  position: relative;
+//  width: 100%;
+//  overflow: hidden;
+//  white-space: nowrap;
+//}
+//.component-slider .slider-container {
+//  margin: 0 30px;
+//  overflow: hidden;
+//}
+//.component-slider .slider-content {
+//  display: inline-block;
+//  transition: margin-left 1s ease-in;
+//}
+//.component-slider .caret {
+//  width: 30px;
+//  height: 100%;
+//  position: absolute;
+//  top: 50%;
+//  transform: translateY(-50%);
+//  padding: 0;
+//  margin: 0;
+//  background: none;
+//  border: none;
+//  cursor: pointer;
+//  text-align: center;
+//  font-size: 30px;
+//  color: #797979;
+//}
+//.component-slider .caret-right {
+//  right: 0;
+//}
+//.component-slider .caret-left {
+//  left: 0;
+//}
+//
+//.menu-bar {
+//  border: 0.5px solid black;
+//  width: 100%;
+//  margin-bottom: 20px;
+//  //background-color: #EFEFEF;
+//}
+//
 .menu-item {
-  padding: 0 40px;
-  margin: 5px 10px;
-  user-select: none;
+  width: 165px;
+  display: inline-block;
+  padding: 10px 0;
   cursor: pointer;
-  border: none;
-}
-.menu-item-wrapper.active {
-  border: 1px blue solid;
-}
-.menu-item.active {
-  border: 1px green solid;
+  margin: 10px 5px;
+  //border: 0.5px solid black;
+  background-color: white;
 }
 
-.scroll-menu-arrow {
-  padding: 20px;
-  cursor: pointer;
+.menu-item:hover {
+  background: #656565;
+  color: #ffffff;
+}
+
+.descriptionMenu {
+  width: 85%;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  height: 30%;
+  line-height: 12.7px;
+  padding-top: 3px;
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  height: 240px;
+}
+
+.titleMenu {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: -3px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.moreTips {
+  margin-bottom: 20px;
 }

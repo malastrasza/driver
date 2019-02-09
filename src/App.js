@@ -15,7 +15,6 @@ import patronate from "./img/drivingexperience.jpg";
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faThumbsUp, faShareAlt} from '@fortawesome/free-solid-svg-icons';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 library.add(faThumbsUp, faShareAlt);
 
