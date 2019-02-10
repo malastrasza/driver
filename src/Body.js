@@ -8,6 +8,11 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import ComponentSlider from "@kapost/react-component-slider";
 
 
+const big = {
+    width: '50px',
+    height: '50px'
+}
+
 class Popup extends Component {
     render() {
         return (
@@ -25,7 +30,7 @@ class Body extends Component {
         super(props);
         this.state = {
             showPopup: false,
-
+            style: 'menu-item'
         }
     }
 
@@ -36,9 +41,20 @@ class Body extends Component {
         })
     }
 
+    enlargeDiv() {
+        if (this.state.style == 'menu-item') {
+            this.setState({
+                style: 'menu-item-large',
+            })
+        }
+        else if (this.state.style == 'menu-item-large') {
+            this.setState({
+                style: 'menu-item'
+            })
+        }
+    }
+
     render() {
-        // const renderLeftArrow = () => <i className="fa fa-caret-left"/>;
-        // const renderRightArrow = () => <i className="fa fa-caret-right"/>;
 
         const actualDate = new Date();
 
@@ -83,9 +99,10 @@ class Body extends Component {
                 <div className="moreTips">
                     <div className="scrolling-wrapper">
                         <div className="card">
-                            <div className="menu-item">
-                                <div className="menuColumn">
+                            <div className={this.state.style}>
+                                <div className="menuColumn" >
                                     <span className="titleMenu">Hill starting</span>
+                                    <button value="BIG" style={big} onClick={this.enlargeDiv.bind(this)}/>
                                     <a href="https://placeholder.com"><img
                                         src="https://via.placeholder.com/140x150.png?text=1"/></a>
                                     <div className="descriptionMenu">Ut accumsan erat ac nunc blandit, at malesuada ex
