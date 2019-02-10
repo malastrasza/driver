@@ -338,29 +338,65 @@ textarea:focus {
     display: none;
   }
 
-  .card {
-    display: inline-block;
-  }
+
 }
+
+.card {
+  display: inline-block;
+}
+
 
 .moreTips {
   margin-bottom: 20px;
 }
 
-.menu-item {
-  width: 165px;
-  display: inline-block;
-  padding: 10px 0;
-  cursor: pointer;
-  margin: 10px 5px;
-  background-color: white;
+
+.scrolling-wrapper-up {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  //display: flex;
+  ////justify-content: center;
+  //align-items: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
 }
 
-.menu-item-large {
-  width: 400px;
+.cardLarge {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  //top: 50%;
+  //left: 35%;
+  //right: 50%;
+  //bottom: 50%;
+}
+
+//.none {
+// //display: inline-block;
+//}
+
+//.flexCard {
+//  display: flex;
+//  justify-content: center;
+//}
+
+.block {
   display: inline-block;
-  padding: 10px 0;
-  cursor: pointer;
-  margin: 10px 5px;
-  background-color: white;
+}
+
+.unBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

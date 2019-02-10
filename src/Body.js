@@ -30,7 +30,9 @@ class Body extends Component {
         super(props);
         this.state = {
             showPopup: false,
-            style: 'menu-item'
+            style: 'card',
+            styleUp: 'scrolling-wrapper',
+            styleMid: 'block'
         }
     }
 
@@ -42,17 +44,23 @@ class Body extends Component {
     }
 
     enlargeDiv() {
-        if (this.state.style == 'menu-item') {
+        if (this.state.style == 'card') {
             this.setState({
-                style: 'menu-item-large',
+                style: 'cardLarge',
+                styleUp: 'scrolling-wrapper-up',
+                styleMid: 'unBlock'
             })
         }
-        else if (this.state.style == 'menu-item-large') {
+        else if (this.state.style == 'cardLarge') {
             this.setState({
-                style: 'menu-item'
+                style: 'card',
+                styleUp: 'scrolling-wrapper',
+                styleMid: 'block'
             })
         }
     }
+
+
 
     render() {
 
@@ -97,9 +105,10 @@ class Body extends Component {
                     closePopup={this.togglePopup.bind(this)}/> : null}
 
                 <div className="moreTips">
-                    <div className="scrolling-wrapper">
-                        <div className="card">
-                            <div className={this.state.style}>
+                    <div className={this.state.styleUp}>
+                        <div className={this.state.styleMid}>
+                        <div className={this.state.style}>
+                            <div className="menu-item">
                                 <div className="menuColumn" >
                                     <span className="titleMenu">Hill starting</span>
                                     <button value="BIG" style={big} onClick={this.enlargeDiv.bind(this)}/>
@@ -114,6 +123,7 @@ class Body extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                         <div className="card">
                             <div className="menu-item">
