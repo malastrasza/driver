@@ -4,14 +4,15 @@ import {Player, BigPlayButton} from "video-react";
 import movie from "./img/crash.mp4";
 import moviePoster from "./img/carcrash.jpeg";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import hillStart from "./img/hill_starts.png";
 
 // import ComponentSlider from "@kapost/react-component-slider";
 
 
 const big = {
     width: '50px',
-    height: '50px'
-}
+    height: '30px',
+};
 
 class Popup extends Component {
     render() {
@@ -33,7 +34,10 @@ class Body extends Component {
             style: 'card',
             styleUp: 'scrolling-wrapper',
             styleMid: 'block',
-            styleDown: 'menu-item'
+            styleColumn: 'menuColumn',
+            styleDown: 'menu-item',
+            styleDescription: 'descriptionMenu',
+            styleImg: 'imgMenu'
         }
     }
 
@@ -50,7 +54,11 @@ class Body extends Component {
                 style: 'cardLarge',
                 styleUp: 'scrolling-wrapper-up',
                 styleMid: 'unBlock',
-                styleDown: 'menu-item-down'
+                styleDown: 'menu-item-down',
+                styleColumn: 'menuColumnUp',
+                styleTitle: 'titleMenuUp',
+                styleDescription: 'descriptionMenuUp',
+                styleImg: 'imgMenuUp'
             })
         }
         else if (this.state.style == 'cardLarge') {
@@ -58,7 +66,12 @@ class Body extends Component {
                 style: 'card',
                 styleUp: 'scrolling-wrapper',
                 styleMid: 'block',
-                styleDown: 'menu-item'
+                styleDown: 'menu-item',
+                styleColumn: 'menuColumn',
+                styleTitle: 'titleMenu',
+                styleDescription: 'descriptionMenu',
+                styleImg: 'imgMenuUp'
+
             })
         }
     }
@@ -112,12 +125,12 @@ class Body extends Component {
                         <div className={this.state.styleMid}>
                         <div className={this.state.style}>
                             <div className={this.state.styleDown}>
-                                <div className="menuColumn" >
-                                    <span className="titleMenu">Hill starting</span>
+                                <div className={this.state.styleColumn} >
+                                    <span className={this.state.styleTitle}>Hill starting</span>
                                     <button value="BIG" style={big} onClick={this.enlargeDiv.bind(this)}/>
-                                    <a href="https://placeholder.com"><img
-                                        src="https://via.placeholder.com/140x150.png?text=1"/></a>
-                                    <div className="descriptionMenu">Ut accumsan erat ac nunc blandit, at malesuada ex
+                                    <img className={this.state.styleImg}
+                                        src={hillStart}/>
+                                    <div className={this.state.styleDescription}>Ut accumsan erat ac nunc blandit, at malesuada ex
                                         laoreet. Sed pretium maximus egestas. Nulla porta erat ut volutpat pulvinar.
                                         Nulla
                                         tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
