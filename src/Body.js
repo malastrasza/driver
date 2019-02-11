@@ -32,7 +32,8 @@ class Body extends Component {
             showPopup: false,
             style: 'card',
             styleUp: 'scrolling-wrapper',
-            styleMid: 'block'
+            styleMid: 'block',
+            styleDown: 'menu-item'
         }
     }
 
@@ -48,14 +49,16 @@ class Body extends Component {
             this.setState({
                 style: 'cardLarge',
                 styleUp: 'scrolling-wrapper-up',
-                styleMid: 'unBlock'
+                styleMid: 'unBlock',
+                styleDown: 'menu-item-down'
             })
         }
         else if (this.state.style == 'cardLarge') {
             this.setState({
                 style: 'card',
                 styleUp: 'scrolling-wrapper',
-                styleMid: 'block'
+                styleMid: 'block',
+                styleDown: 'menu-item'
             })
         }
     }
@@ -108,7 +111,7 @@ class Body extends Component {
                     <div className={this.state.styleUp}>
                         <div className={this.state.styleMid}>
                         <div className={this.state.style}>
-                            <div className="menu-item">
+                            <div className={this.state.styleDown}>
                                 <div className="menuColumn" >
                                     <span className="titleMenu">Hill starting</span>
                                     <button value="BIG" style={big} onClick={this.enlargeDiv.bind(this)}/>
