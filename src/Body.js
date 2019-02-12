@@ -135,7 +135,7 @@ class Body extends Component {
                                         Nulla
                                         tincidunt erat augue. Curabitur et bibendum risus. Pellentesque sit amet risus
                                         quis
-                                        lectus semper interdum nec in massa.
+                                        lectus semper interdum nec.
                                     </div>
                                 </div>
                             </div>
